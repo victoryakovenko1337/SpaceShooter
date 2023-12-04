@@ -1,24 +1,24 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelsManager : MonoBehaviour  
+public static class LevelsManager  
 {    
-    public void LoadMainMenu()
+    public static void LoadMainMenu()
     {
-        SceneManager.LoadScene((int)Scenes.MainMenu);
+        SceneManager.LoadScene(Scenes.MainMenu);
     }
 
-    public void LoadGame()
+    public static void LoadGame()
     {        
-        SceneManager.LoadScene((int)Scenes.Game);
+        SceneManager.LoadScene(Scenes.Game);
     }
 
-    public void Settings()
+    public static void Settings()
     {        
-        SceneManager.LoadScene((int)Scenes.Settings);
+        SceneManager.LoadScene(Scenes.Settings);
     }
 
-    public void QuitGame()
+    public static void QuitGame()
     {
         Application.Quit();
     }

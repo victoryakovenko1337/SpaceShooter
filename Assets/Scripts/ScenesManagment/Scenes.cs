@@ -1,7 +1,7 @@
-enum Scenes
+public static class Scenes
 {
-    MainMenu,
-    Game,
-    GameOver,
-    Settings
+    public const string MainMenu = "MainMenu";
+    public const string Game = "Game";
+    public const string GameOver = "GameOver"; 
+    public const string Settings = "Settings";
 }
